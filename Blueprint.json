@@ -303,12 +303,12 @@
           "description": "AzureRegion",
           "strongType": "location"
         },
-        "defaultValue": "eastus"
+        "defaultValue": "westeurope"
       }
     },
     "resourceGroups": {
       "SharedServices-RG": {
-        "name": "[concat(parameters('Organization_Name'),'-SharedSvcs-rg')]",
+        "name": "[concat(parameters(rg-,('Organization_Name'),'-SharedSvcs')]",
         "location": "[parameters('AzureRegion')]",
         "metadata": {
           "displayName": "Resource Group for Shared Services"
