@@ -316,7 +316,7 @@
         "dependsOn": []
       },
       "Network-RG": {
-        "name": "[concat(parameters('Organization_Name'),'-VNet-rg')]",
+        "name": "[concat('rg-',parameters('Organization_Name'),'-VNet')]",
         "location": "[parameters('AzureRegion')]",
         "metadata": {
           "displayName": "Resource Group for Networks"
@@ -324,7 +324,7 @@
         "dependsOn": []
       },
       "Identity-RG": {
-        "name": "[concat(parameters('Organization_Name'),'-Identity-rg')]",
+        "name": "[concat('rg-',parameters('Organization_Name'),'-Identity')]",
         "location": "[parameters('AzureRegion')]",
         "metadata": {
           "displayName": "Resource Group for Identity Services"
@@ -332,7 +332,7 @@
         "dependsOn": []
       },
       "Application-RG": {
-        "name": "[concat(parameters('Organization_Name'),'-Application-rg')]",
+        "name": "[concat('rg-',parameters('Organization_Name'),'-Application')]",
         "location": "[parameters('AzureRegion')]",
         "metadata": {
           "displayName": "Resource Group for First Application"
