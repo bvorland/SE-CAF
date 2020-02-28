@@ -16,7 +16,7 @@
         }
       },
       "variables": {
-        "deployment-prefix": "[concat(parameters('Organization_Name'), '-sharedsvcs')]",
+        "deployment-prefix": "[concat('rg-',parameters('Organization_Name'), '-sharedsvcs')]",
         "key-vault-name": "[concat(variables('deployment-prefix'), '-kv')]"
       },
       "resources": [
