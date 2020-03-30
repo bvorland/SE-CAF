@@ -247,7 +247,7 @@
           "displayName": "Number of days data will be retained in Log Analytics",
           "description": "LogAnalytics_DataRetention"
         },
-        "defaultValue": 365,
+        "defaultValue": 30,
         "allowedValues": [
           30,
           60,
@@ -263,6 +263,7 @@
           "displayName": "Azure Region used when establishing the Log Analytics workspace",
           "description": "LogAnalytics_Location"
         },
+        "defaultValue": "West Europe",
         "allowedValues": [
           "Australia Central",
           "Australia East",
